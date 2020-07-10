@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <link rel="stylesheet" type="text/css" href="webFiles/menue1/menue1.css"/>
+</h:head>
+<h:body>
+    <div id="myPersonalInfo">
+        <div id="myPersonalInfoHead">
+            <div style="text-align: center; font-weight: bold; font-size: 40px;">Mein Profil</div><br/>
+        </div>
+        <div style="margin-left: 5px;">
+            <div class="ownProfileItems">
+                <b style="font-family: Arial;">Benutzername:</b>
+                <div style="margin-left: 5px; margin-right: 5px; font-family: 'News Gothic MT';">
+                    <h:outputText value="#{adminMenueK.ownUserName}" />
+                </div>
+            </div>
+            <div class="ownProfileItems">
+                <b style="font-family: Arial;">Vorname:</b>
+                <div style="margin-left: 5px; margin-right: 5px; font-family: 'News Gothic MT';">
+                    <h:outputText value="#{adminMenueK.ownFirstName}" />
+                </div>
+            </div>
+            <div class="ownProfileItems">
+                <b style="font-family: Arial;">Nachname:</b>
+                <div style="margin-left: 5px; margin-right: 5px; font-family: 'News Gothic MT';">
+                    <h:outputText value="#{adminMenueK.ownLastName}" />
+                </div>
+            </div>
+            <div class="ownProfileItems">
+                <b style="font-family: Arial;">Geburtstag:</b>
+                <div style="margin-left: 5px; margin-right: 5px; font-family: 'News Gothic MT';">
+                    <h:outputText value="#{adminMenueK.ownBday}" />
+                </div>
+            </div>
+            <div style="margin-top: 20px;">
+                <b style="font-family: Arial;">Administrator:</b>
+                <div style="margin-left: 5px; margin-right: 5px; font-family: 'News Gothic MT';">
+                    <h:graphicImage url="/asserts/checkimage.png" />
+                </div>
+            </div>
+        </div>
+       <!-- <div style="margin-top: 120%; text-align: center;">
+            <b style="font-family: Arial;">Last update: 2020-06-05</b>
+        </div>-->
+    </div>
+</h:body>
+
+
+</html>

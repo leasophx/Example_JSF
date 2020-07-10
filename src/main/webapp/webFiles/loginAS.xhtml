@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <link rel="stylesheet" type="text/css" href="../main.css"/>
+</h:head>
+<h:body>
+    <div id="loginField">
+        <div id="loginFieldHead">
+
+            <div style="text-align: center; font-weight: bold; font-size: 40px;">Login</div>
+            <br/>
+        </div>
+        <h:form>
+            <br/>
+            <div style="font-weight: bold; color: darkblue; font-size: 20px; margin-right: 20px; margin-left: 10px;">Username: </div><h:inputText style="margin-left: 12px;" type="text" size="20" value="#{loginK.username}"/>
+            <br/>
+            <div style="font-weight: bold; color: darkblue; font-size: 20px; margin-right: 20px; margin-left: 10px;">Password: </div><h:inputSecret style="margin-left: 12px;" type="text" size="20" value="#{loginK.password}"/>
+
+            <br/><br/>
+            <h:commandButton value="Login" action="#{loginK.getUrlLogin}" style="background-color: darkgreen; color: #ffffff; width: 100px; height: 30px; font-size: 20px; border-radius: 10px; margin-left: 10px;"/>
+        </h:form>
+    </div>
+
+</h:body>
+</html>

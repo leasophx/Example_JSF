@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://java.sun.com/jsf/html"
+      xmlns:ul="http://java.sun.com/jsf/html">
+
+<h:head>
+    <link rel="stylesheet" type="text/css" href="adminMenueAAS.css"/>
+</h:head>
+
+<h:body>
+    <div id="headertext">
+        <h1 style="padding-top: 5px;">Sachbearbeiter - Intern - Adminzugriff</h1>
+    </div>
+    <h:inputHidden value="#{adminMenueK.init}" />
+
+    <div id="menue">
+        <h:form>
+            <h:commandButton styleClass="menueButton" value="Mein Profil" action="#{adminMenueK.menuItem1Clicked}" />
+            <h:commandButton styleClass="menueButton" value="Erstellen" action="#{adminMenueK.menuItem2Clicked}" />
+            <h:commandButton styleClass="menueButton" value="Bearbeiten" action="#{adminMenueK.menuItem3Clicked}" />
+            <h:commandButton styleClass="menueButton" value="Löschen" action="#{adminMenueK.menuItem4Clicked}" />
+            <h:button styleClass="menueButton" value="Abmelden" outcome="#{loginK.urlLogout}"/>
+
+         </h:form>
+        <!--<h:button styleClass="menueButton" value="Mein Profil" outcome=""/>
+        <h:button styleClass="menueButton" value="Erstellen" outcome=""/>
+        <h:button styleClass="menueButton" value="Bearbeiten" outcome=""/>
+        <h:button styleClass="menueButton" value="Löschen" outcome="#{loginK.urlLogout}"/>-->
+
+
+
+
+
+
+        <h:panelGroup rendered="#{adminMenueK.menu1}">
+            <ui:include src="webFiles/menue1/myProfileMenueShow.xhtml"></ui:include>
+            <ui:include src="webFiles/menue1/welcome.xhtml"></ui:include>
+            <ui:include src="webFiles/menue1/news.xhtml"></ui:include>
+        </h:panelGroup>
+
+        <h:panelGroup rendered="#{adminMenueK.menu2}">
+            <ui:include src="webFiles/menue2/sachbearbeiterCreateAAS.xhtml"></ui:include>
+        </h:panelGroup>
+
+        <h:panelGroup rendered="#{adminMenueK.menu3_1}">
+            <ui:include src="webFiles/menue3/sachbearbeiterChangeAAS.xhtml"></ui:include>
+        </h:panelGroup>
+        <h:panelGroup rendered="#{adminMenueK.menu3_2}">
+            <ui:include src="webFiles/menue3/sachbearbeiterChangeInputModulAAS.xhtml"></ui:include>
+        </h:panelGroup>
+
+        <h:panelGroup rendered="#{adminMenueK.menu4}">
+            <ui:include src="webFiles/menue4/sachbearbeiterDeleteAAS.xhtml"></ui:include>
+        </h:panelGroup>
+
+
+</div>
+
+
+
+
+
+</h:body>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+
+<h:head>
+    <title>Login Sachbearbeiter</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+</h:head>
+<h:body>
+<!--<a href="/QuickServlet">Click here to send GET request</a>-->
+
+<br/><br/>
+    <div id="headertext">
+        <h1 style="padding-top: 5px;">Sachbearbeiter - Login - Plattform</h1>
+    </div>
+
+
+
+
+            <br/>
+            <!-- Login Anmeldefenster als Include implementiert und ein default standart admin wird erzeugt solange keiner existiert -->
+
+            <f:viewAction action="#{loginK.createDefaultAdminUser}" />
+            <ui:include src="webFiles/loginAS.xhtml" />
+
+
+
+
+
+    <div id="newsLogin">
+        <div id="newsLoginHead">
+            <div style="text-align: center; font-weight: bold; font-size: 40px;">News</div><br/>
+        </div>
+        <div style="margin-left: 5px;">
+        <div>
+            <b style="font-family: Arial;">- Neue Version V1.0</b>
+            <div style="margin-left: 5px; margin-right: 5px; font-family: 'News Gothic MT';">
+                Fehler wurden behoben und Sachbearbeiter sowie Administratoren können sich anmelden.
+            </div>
+        </div>
+        <div>
+            <b style="font-family: Arial;">- Neue Version V0.5</b>
+            <div style="margin-left: 5px; margin-right: 5px; font-family: 'News Gothic MT';">
+                Es gibt noch diverse Komplikationsprobleme mit der neuen Java-Version.
+            </div>
+        </div>
+        </div>
+        <div style="margin-top: 120%; text-align: center;">
+            <b style="font-family: Arial;">Last update: 2020-06-05</b>
+        </div>
+    </div>
+
+
+    <div id="supportField">
+        <div id="supportFieldHead">
+            <div style="text-align: center; font-weight: bold; font-size: 40px;">Support</div><br/>
+        </div>
+        <div>
+            <br/>
+            <b style="font-family: Arial; margin-left: 5px;">Kontakt:</b> xxx@xxx.de<br/>
+            <b style="font-family: Arial; margin-left: 5px;">Telefon:</b> 0176-xxxxxx
+        </div>
+
+    </div>
+
+    <!--#{QuickServlet.getUser()}-->
+    <!--<p id="test"><b>Eingegebener Benutzername:</b></p>-->
+    <!--<f:facet name="footer"></f:facet>-->
+    <!--<h:outputText id="warningDose" escape="false" styleClass="redText" value="#{QuickServlet.user}">Hi</h:outputText>-->
+    <!--<p><b>Eingegebenes Password:</b> #{QuickServlet.pass}</p>-->
+
+</h:body>
+</html>

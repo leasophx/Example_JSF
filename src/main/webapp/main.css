@@ -1,0 +1,73 @@
+body{
+
+    background-color: mintcream;
+}
+
+
+#headertext{
+    height: 50px;
+    left: 10%;
+    right: 10%;
+    border-radius: 10px;
+    background-color: darkblue;
+    color: gold;
+    text-align: center;
+}
+
+
+#newsLogin{
+    position: absolute;
+    border-radius: 20px;
+    top: 15%;
+    right: 20%;
+    width: 250px;
+    height: 80%;
+    background-color: gold;
+    color: darkblue;
+
+}
+#newsLoginHead{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: orange;
+    width: 100%;
+    height: 50px;
+}
+
+#loginField{
+    position: absolute;
+    border-radius: 20px;
+    top: 15%;
+    width: 250px;
+    height: 250px;
+    background-color: gold;
+    color: darkblue;
+    right: 44%;
+
+
+}
+#loginFieldHead{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: orange;
+    width: 100%;
+    height: 50px;
+}
+
+#supportField{
+    position: absolute;
+    border-radius: 20px;
+    top: 15%;
+    width: 250px;
+    height: 250px;
+    background-color: gold;
+    color: darkblue;
+    left: 10%;
+}
+#supportFieldHead{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: orange;
+    width: 100%;
+    height: 50px;
+}

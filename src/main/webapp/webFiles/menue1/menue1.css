@@ -1,0 +1,61 @@
+#myPersonalInfo{
+    position: absolute;
+    border-radius: 20px;
+    top: 15%;
+    left: 15%;
+    width: 250px;
+    height: 45%;
+    background-color: gold;
+    color: darkblue;
+
+    text-align: left;
+
+}
+
+#myPersonalInfoHead{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: orange;
+    width: 100%;
+    height: 50px;
+}
+
+.ownProfileItems{
+    margin-top: 5px;
+}
+
+#welcomeModule{
+    position: absolute;
+    border-radius: 20px;
+    top: 20%;
+    left: 39%;
+    width: 400px;
+    height: 80px;
+    background-color: orange;
+    color: darkblue;
+    box-shadow: 5px 10px darkblue;
+
+    text-align: left;
+
+}
+
+
+#newsUser{
+    position: absolute;
+    border-radius: 20px;
+    top: 15%;
+    right: 15%;
+    width: 250px;
+    height: 60%;
+    background-color: gold;
+    color: darkblue;
+    text-align: left;
+
+}
+#newsUserHead{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: orange;
+    width: 100%;
+    height: 50px;
+}

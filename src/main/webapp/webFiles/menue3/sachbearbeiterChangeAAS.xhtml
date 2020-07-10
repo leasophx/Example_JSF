@@ -1,0 +1,65 @@
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://java.sun.com/jsf/html"
+      xmlns:ul="http://java.sun.com/jsf/html">
+
+
+<h:head>
+    <link rel="stylesheet" type="text/css" href="webFiles/menue3/menue3.css"/>
+</h:head>
+<h:body>
+
+    #{rowCounter.init()}
+    #{sachbearbeiterChangeK.init()}
+    <div id="changeList">
+        <div id="changeListHead">
+            <div style="text-align: center; font-weight: bold; font-size: 40px;">Sachbearbeiter bearbeiten</div>
+
+            <div style="margin-top: 10px;">
+            <h:dataTable var="mySachbearbeiter" value="#{Sachbearbeiter.getUsers()}">
+                <h:column>
+                    <f:facet name="header">ID</f:facet>
+                    <h:outputText value="#{rowCounter.row+1}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Benutzername</f:facet>
+                    <h:outputText value="#{Sachbearbeiter.getUsers().get(rowCounter.row).username}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Vorname</f:facet>
+                    <h:outputText value="#{Sachbearbeiter.getFirstName(rowCounter.row)}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Nachname</f:facet>
+                    <h:outputText value="#{Sachbearbeiter.getLastName(rowCounter.row)}" />
+                </h:column>
+                <!-- <h:column>
+                     <f:facet name="header">Entfernen</f:facet>
+                     <h:commandButton value="Löschen" action="#{Sachbearbeiter.removeUser(rowCounter.row)}" />
+                 </h:column>-->
+                <h:column>
+                    <h:outputText value="#{rowCounter.counterUp()}" />
+                </h:column>
+            </h:dataTable>
+            </div>
+            <div style="right: 10px; top: 60px; position: absolute; background-color: darkblue; border-radius: 20px; padding: 10px; margin: 10px; box-shadow: 2px 2px 5px 10px darkorange;">
+                <h:form>
+                    <div style="font-weight: bold; color: gold; font-size: 20px; margin-right: 20px; margin-left: 10px;">BenutzerID eingeben: </div><h:inputText style="margin-left: 12px;" type="number" size="20" value="#{sachbearbeiterChangeK.index}"/>
+                    <br/><br/>
+                    <h:commandButton value="Bearbeiten" action="#{adminMenueK.menuItem3_2Clicked}" style="background-color: darkgreen; color: gold; width: 108px; height: 30px; font-size: 20px; border-radius: 10px; margin-left: 10px;"/>
+                </h:form>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</h:body>
+
+</html>
