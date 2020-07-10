@@ -8,5 +8,5 @@
 * Fügen Sie die Dateien von Github hinzu inklusive der pom.xml. 
 * In der RunConfiguration wählen Sie Maven aus und in dem CommandLine Fenster tragen Sie `tomcat7:run` ein. 
 * Anschließend sollte der TomCat Server laufen. 
-* Im BrowserFenster geben Sie (localhost-adresse)/aufgabenblatt3/index.xhtml ein. 
+* Im BrowserFenster geben Sie `(localhost-adresse)/aufgabenblatt3/index.xhtml` ein. 
 * Fertig :) 
