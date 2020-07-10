@@ -1,2 +1,2 @@
 Ein Beispiel einer JSF Anwendung mit Sachbearbeiterverwaltung.
-@by leasophx
+@Created by leasophx
