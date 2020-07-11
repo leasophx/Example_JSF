@@ -10,3 +10,6 @@
 * Anschließend sollte der TomCat Server laufen. 
 * Im BrowserFenster geben Sie `(localhost-adresse)/aufgabenblatt3/index.xhtml` ein. 
 * Fertig :) 
+
+### - Example:
+![Example_JSF](../assets/jsf_2.gif?raw=true)
