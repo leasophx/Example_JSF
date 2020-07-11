@@ -12,4 +12,7 @@
 * Fertig :) 
 
 ### - Example:
-![Example_JSF](../assets/jsf_2.gif?raw=true)
+* #### Preview 1:
+![Example 1](../assets/jsf_2.png?raw=true)
+* #### Preview 2:
+![Example 1](../assets/jsf_1.png?raw=true)
