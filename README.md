@@ -13,4 +13,4 @@
 
 ### - Example:
 * #### Preview:
-<img src="../assets/jsf_2.png" width="90%"></img>
+<img src="../assets/jsf_2.png" width="90%" alt="Example 1"></img>
