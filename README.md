@@ -12,5 +12,7 @@
 * Fertig :) 
 
 ### - Example:
-* #### Preview:
+* #### Preview 1:
 <img src="../assets/jsf_2.png" width="90%" alt="Example 1"></img>
+* #### Preview 2:
+<img src="../assets/jsf_1.png" width="90%" alt="Example 2"></img>
