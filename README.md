@@ -13,4 +13,5 @@
 
 ### - Example:
 * #### Preview:
-![Example 1](../assets/jsf_2.png?raw=true)
+<img src="../assets/jsf_2.png" width="45%"></img>
+<img src="../assets/jsf_1.png" width="45%"></img>
